@@ -1,0 +1,16 @@
+# Contradicta — requirements.txt
+# Install with: pip install -r requirements.txt
+
+# ── Web UI ──────────────────────────────────────────────────────────────────
+streamlit>=1.32.0
+
+# ── NLP / NLI model ─────────────────────────────────────────────────────────
+transformers>=4.40.0
+torch>=2.1.0           # CPU build; swap for torch==2.x+cu118 for GPU
+
+# ── OCR (optional but included) ─────────────────────────────────────────────
+pytesseract>=0.3.10
+Pillow>=10.0.0
+
+# ── Utilities ───────────────────────────────────────────────────────────────
+# (transformers pulls in numpy, huggingface-hub, tokenizers, etc.)
