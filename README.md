@@ -47,4 +47,3 @@ streamlit run app.py
 
 - First run downloads the BART model (~1.6 GB). Subsequent runs use the cache.
 - For GPU: change `device=-1` to `device=0` in `load_nli_model()` inside `app.py`.
-- This is a hackathon prototype — not a substitute for professional medical advice.
